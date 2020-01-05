@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ResturantInfo">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/dim_50dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_20sp"
+                android:id="@+id/resturantinfo_tvstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:id="@+id/resturantinfo_tvcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_20sp"
+                android:layout_marginTop="@dimen/album_dp_20"/>
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_20sp"
+                android:layout_marginTop="@dimen/album_dp_20"
+                android:id="@+id/resturantinfo_tvregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_20sp"
+                android:layout_marginTop="@dimen/album_dp_20"
+                android:id="@+id/resturantinfo_tvminimumorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_20sp"
+                android:layout_marginTop="@dimen/album_dp_20"
+                android:id="@+id/resturantinfo_tvdeliverycosttv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

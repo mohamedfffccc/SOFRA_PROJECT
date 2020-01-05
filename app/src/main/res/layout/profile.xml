@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_marginBottom="@dimen/album_dp_10"
+        android:layout_above="@id/userprofile_btnedit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userregister_scroll"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_5dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_100dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/userprofile_ivpersonalimage"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userprofile_ivpersonalimage"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_5dp"
+                >
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_account_box_black_24dp"
+                        />
+
+                    <EditText
+
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/album_sp_20"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/userprofile_edname"
+                        android:hint="@string/name"
+                        android:textColorHint="@color/white"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_email_black_24dp"
+                        />
+
+                    <EditText
+                        android:textStyle="bold"
+                        android:textSize="@dimen/album_sp_20"
+                        android:textColor="@color/colorPrimary"
+
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/userprofile_edemail"
+                        android:hint="@string/email"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_call_black_24dp"
+                        />
+
+                    <EditText
+                        android:textStyle="bold"
+                        android:textSize="@dimen/album_sp_20"
+                        android:textColor="@color/colorPrimary"
+
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/userprofile_edphone"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_home_black_24dp"
+                        />
+
+                    <Spinner
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/userprofile_spcity"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_home_black_24dp"
+                        />
+
+                    <Spinner
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/userprofile_spvillage"
+                        android:hint="@string/village"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_vpn_key_black_24dp"
+                        />
+
+                    <EditText
+                        android:textStyle="bold"
+                        android:textSize="@dimen/album_sp_20"
+                        android:inputType="numberPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/userprofile_edpassword"
+android:textColor="@color/colorPrimary"                        android:textColorHint="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_vpn_key_black_24dp"
+                        />
+
+                    <EditText
+                        android:textStyle="bold"
+                        android:textSize="@dimen/album_sp_20"
+                        android:inputType="numberPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/userprofile_edpasswordconfirmation"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        />
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50dp"
+        android:background="@drawable/button_order"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/userprofile_btnedit"
+        android:text="@string/edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_15sp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>

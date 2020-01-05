@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.CommentsAndRate">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_blue"
+        android:text="يسعدنا مشاركتك بتعليق او تقييم"
+        android:textSize="@dimen/album_sp_20"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:id="@+id/commentsfragment_tvrate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_order"
+        android:layout_below="@id/commentsfragment_tvrate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:text="@string/add_comment_or_rate"
+        android:textSize="@dimen/dim_15sp"
+        android:textStyle="bold"
+        android:id="@+id/commentsfragment_btnaddcomment"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentsfragment_btnaddcomment"
+        android:id="@+id/commentsfragment_commentslist"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

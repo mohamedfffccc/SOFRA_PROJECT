@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dim_5dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/categoryitembackground"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/album_dp_100"
+        android:layout_height="@dimen/album_dp_100"
+        android:src="@drawable/ic_pizza"
+        android:layout_alignParentStart="true"
+        android:id="@+id/storeitem_ivimage"/>
+
+    <TextView
+        android:id="@+id/storeitem_tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/album_sp_20"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toEndOf="@id/storeitem_ivimage"
+        android:layout_marginStart="@dimen/dim_5dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/storeitem_tvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="@dimen/dim_15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toEndOf="@id/storeitem_tvname"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:text="@string/price" />
+    <RelativeLayout
+        android:layout_alignParentEnd="true"
+android:layout_marginStart="@dimen/album_dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/album_dp_50"
+        android:id="@+id/storeitem_rel1"
+        android:layout_below="@id/storeitem_tvname"
+        android:layout_toEndOf="@id/storeitem_ivimage"
+        android:layout_marginTop="@dimen/album_dp_20">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/dim_5dp"
+            android:layout_marginTop="@dimen/album_dp_10"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="@string/quantity"
+            android:id="@+id/orderitem_tvquantity"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dim_15sp"
+            />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/categoryitembackground"
+            android:layout_width="@dimen/album_dp_40"
+            android:gravity="center"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="1"
+            android:layout_gravity="center"
+            android:id="@+id/storeitem_tvcount"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dim_20sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_toStartOf="@id/storeitem_tvcount"
+            android:id="@+id/storeitem_ivadd"
+            android:layout_marginEnd="@dimen/dim_10dp"
+            android:layout_width="@dimen/album_dp_40"
+            android:layout_height="@dimen/album_dp_50"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_gravity="center"/>
+        <ImageView
+
+            android:layout_toEndOf="@id/storeitem_tvcount"
+            android:id="@+id/storeitem_ivremove"
+            android:layout_marginStart="@dimen/album_dp_10"
+            android:layout_width="@dimen/album_dp_40"
+            android:layout_height="@dimen/album_dp_50"
+            android:src="@drawable/ic_remove_black_24dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="@dimen/dim_30dp"
+        android:layout_height="@dimen/dim_30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close_black_24dp"
+        android:id="@+id/storeitem_btndelete"
+        android:background="@drawable/closebtnback"/>
+</RelativeLayout>

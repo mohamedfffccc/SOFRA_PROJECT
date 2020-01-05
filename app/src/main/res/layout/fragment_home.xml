@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/resturantslist_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_marginLeft="@dimen/album_dp_10"
+            android:layout_width="wrap_content"
+            android:background="@drawable/categoryitembackground"
+
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:background="@drawable/categoryitembackground"
+android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:id="@+id/resturantslist_spcity"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_downward_red_24dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/categoryitembackground"
+            android:orientation="horizontal">
+            <EditText
+                android:textSize="@dimen/dim_20sp"
+                android:textStyle="bold"
+
+android:background="@drawable/categoryitembackground"
+                android:hint="@string/search_your_restaurant_here"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/gray"
+                android:id="@+id/resturantslist_edkeyword"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="@dimen/dim_50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/resturantslist_btnsearch"
+                android:src="@drawable/ic_search_red_24dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/resturantslist_lin1"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/album_dp_10"
+        android:id="@+id/resturantlist">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

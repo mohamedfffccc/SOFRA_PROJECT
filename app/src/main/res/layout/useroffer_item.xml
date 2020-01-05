@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dim_3dp"
+    android:background="@drawable/categoryitembackground"
+    android:layout_height="wrap_content">
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:layout_width="match_parent"
+        android:id="@+id/offeritem_swipe1"
+        android:layout_height="wrap_content"
+        app:mode="same_level"
+        app:dragEdge="left">
+
+    <!-- Your secondary layout here -->
+    <RelativeLayout
+        android:layout_width="@dimen/album_dp_100"
+
+        android:id="@+id/userofferitem_linswipe"
+
+        android:layout_height="match_parent" >
+        <ImageView
+            android:layout_centerVertical="true"
+android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/album_dp_40"
+            android:layout_height="@dimen/album_dp_40"
+            android:id="@+id/userofferitem_delete"
+            android:src="@drawable/delete_red"
+            />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="@dimen/album_dp_40"
+            android:layout_height="@dimen/album_dp_40"
+            android:id="@+id/userofferitem_edit"
+            android:src="@drawable/ic_edit_black_24dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/offeritem_ivrestaurantimage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="2"
+        app:civ_shadow_color="@color/gray"
+        android:layout_width="@dimen/dim_80dp"
+        android:layout_height="@dimen/dim_80dp"
+        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/offeritem_tvrestaurantname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/album_dp_20"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="@dimen/album_dp_20"
+            android:layout_marginBottom="@dimen/album_dp_20"
+            android:layout_toLeftOf="@id/offeritem_ivrestaurantimage"
+            android:text="عرض الجامبو"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dim_20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_below="@id/offeritem_ivrestaurantimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_order"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_15sp"
+            android:text="@string/details"
+            android:id="@+id/offeritem_btndetails"/>
+
+    </RelativeLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+</RelativeLayout>

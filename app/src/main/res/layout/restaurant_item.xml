@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/album_dp_2"
+    android:layout_height="@dimen/dim_150dp">
+
+    <RelativeLayout
+
+
+        android:layout_width="wrap_content"
+        android:background="@drawable/resturantitembackground"
+
+        android:layout_height="@dimen/dim_150dp"
+android:layout_alignParentTop="true"
+android:layout_toLeftOf="@id/resturant_image">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_alignParentRight="true"        android:text="rrachaaa"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_20sp"        android:textColor="@color/red"
+        android:layout_marginRight="@dimen/dim_40dp"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:id="@+id/resturantname"/>
+    <RatingBar
+        android:rating="0"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:isIndicator="true"
+        android:clickable="false"
+        android:outlineSpotShadowColor="@color/red"
+        android:outlineAmbientShadowColor="@color/red"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resturantname"
+        android:layout_toLeftOf="@id/resturant_image"
+        android:id="@+id/resturantrate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/dim_40dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_10sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/minimumorder"
+        android:text="@string/minimum_order"
+        android:layout_below="@id/resturantrate"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:layout_marginRight="@dimen/dim_40dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_10sp"
+        android:layout_marginLeft="@dimen/album_sp_20"
+
+        android:id="@+id/deliverycost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_cost"
+        android:layout_below="@id/minimumorder"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/dim_5dp"
+
+        android:layout_marginLeft="@dimen/dim_20dp"
+        android:id="@+id/resturantstatus"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_10sp"
+        android:layout_height="wrap_content"
+        android:text="@string/open"/>
+    <TextView
+
+        android:layout_marginLeft="@dimen/dim_5dp"
+        android:id="@+id/resturantstatusimage"
+        android:layout_toRightOf="@id/resturantstatus"
+        android:layout_width="@dimen/album_dp_20"
+        android:layout_height="@dimen/album_dp_20"
+        android:text="0"
+        android:textColor="@color/dark_green"
+        android:background="@drawable/resturantstatusopen"/>
+    </RelativeLayout>
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="@dimen/dim_120dp"
+        android:layout_marginTop="-4dp"
+        android:layout_height="@dimen/dim_120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-30dp"
+        android:src="@mipmap/ic_launcher"
+        android:background="@drawable/resturantimagebackground"
+        android:layout_alignParentTop="true"
+        android:id="@+id/resturant_image"/>
+</RelativeLayout>

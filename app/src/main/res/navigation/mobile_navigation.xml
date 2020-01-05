@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.sofra.view.activity.ui.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_my_categories"
+        android:name="com.example.sofra.view.activity.ui.myorders.MyOrders"
+        android:label=""
+        tools:layout="@layout/categories" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.sofra.view.activity.ui.profile.Profile"
+        android:label=""
+        tools:layout="@layout/profile" />
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.sofra.view.activity.ui.More"
+        android:label=""
+        tools:layout="@layout/fragment_more" />
+</navigation>

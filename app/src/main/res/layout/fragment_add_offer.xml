@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.AddOfferFragment">
+    <ScrollView
+        android:id="@+id/scrool"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/add_image"
+                android:textSize="@dimen/album_sp_20"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id="@+id/addofferfragment_tvadd"
+                android:layout_margin="@dimen/album_dp_20"/>
+            <ImageView
+                android:layout_width="@dimen/album_dp_100"
+                android:layout_height="@dimen/album_dp_100"
+                android:layout_below="@id/addofferfragment_tvadd"
+                android:src="@drawable/ic_broken_image_black_24dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/addofferfragment_ivimage"/>
+            <EditText
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:hint="@string/offer_name"
+                android:background="@drawable/ed_forget"
+                android:layout_below="@id/addofferfragment_ivimage"
+                android:layout_margin="@dimen/album_dp_10"
+                android:id="@+id/addofferfragment_tvname"/>
+            <EditText
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_200dp"
+                android:hint="@string/breif_description"
+                android:background="@drawable/ed_forget"
+                android:layout_below="@id/addofferfragment_tvname"
+                android:layout_margin="@dimen/album_dp_10"
+                android:id="@+id/addofferfragment_tvdesc"/>
+            <EditText
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:hint="@string/price"
+                android:layout_below="@id/addofferfragment_tvdesc"
+                android:background="@drawable/ed_forget"
+                android:inputType="number"
+                android:layout_margin="@dimen/album_dp_10"
+                android:id="@+id/addofferfragment_tvprice"/>
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ed_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addofferfragment_tvprice"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addofferfragment_tvfoom"
+                    android:text="@string/from"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dim_10sp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addofferfragment_btndatefrom"
+                    android:src="@drawable/ic_today_black_24dp"
+                    android:layout_marginEnd="@dimen/dim_5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin2222"
+                android:layout_margin="@dimen/dim_5dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ed_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addofferfragment_tvprice"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addofferfragment_btndateto"
+                    android:src="@drawable/ic_today_black_24dp"
+                    android:layout_marginEnd="@dimen/dim_5dp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addofferfragment_tvto"
+                    android:text="@string/to"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dim_10sp"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_order"
+android:layout_below="@id/lin2222"
+                android:layout_centerHorizontal="true"
+
+                android:id="@+id/addofferfragment_btnadd"
+                android:textSize="@dimen/dim_15sp"
+                android:layout_margin="@dimen/album_dp_20"
+                android:text="@string/add"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

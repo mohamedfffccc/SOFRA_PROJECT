@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_100dp">
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/categoryfoods_swipe1"
+        app:mode="same_level"
+        app:dragEdge="left">
+
+        <!-- Your secondary layout here -->
+        <RelativeLayout
+
+            android:layout_width="@dimen/dim_100dp"
+            android:layout_marginTop="@dimen/album_dp_50"
+
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/album_dp_10"
+                android:layout_width="@dimen/dim_40dp"
+                android:layout_height="@dimen/dim_40dp"
+                android:id="@+id/categoryfooditem_delete"
+                android:src="@drawable/delete_red"
+                />
+            <ImageView
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dim_40dp"
+                android:layout_height="@dimen/dim_40dp"
+                android:id="@+id/categoryfooditem_edit"
+                android:src="@drawable/ic_edit_black_24dp"/>
+
+        </RelativeLayout>
+        <!-- Your main layout here -->
+        <RelativeLayout
+            android:background="@drawable/categoryitembackground"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:background="@drawable/categoryimageback"
+
+                android:layout_width="@dimen/dim_70dp"
+                android:layout_height="@dimen/dim_70dp"
+                android:src="@drawable/ic_person_black_24dp"
+                android:id="@+id/categoriesfooditem_categoryimage"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:id="@+id/categoryfooditem_categoryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/categoriesfooditem_categoryimage"
+                android:layout_margin="@dimen/dim_5dp"
+                android:text="pasta"
+                android:textSize="@dimen/dim_15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categoryfooditem_categoryname"
+                android:layout_toLeftOf="@id/categoriesfooditem_categoryimage"
+                android:text="description"
+                android:layout_margin="@dimen/dim_5dp"
+                android:id="@+id/categoriesfooditem_tvdesc"
+                android:textSize="@dimen/dim_10sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+
+                android:id="@+id/categoriesfooditem_tvprice"
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textColor="@color/customeblue"
+                android:layout_margin="@dimen/dim_5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categoriesfooditem_tvprice"
+                android:textSize="@dimen/dim_10sp"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="20$"
+                android:id="@+id/categoriesfooditem_categoryprice"
+                android:layout_margin="@dimen/dim_5dp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</RelativeLayout>

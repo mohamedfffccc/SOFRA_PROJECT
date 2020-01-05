@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/profileitembackground"
+    android:layout_height="@dimen/album_dp_200">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/album_dp_100"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_ratea5"
+        android:id="@+id/orderitem_resturantimage"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dim_20dp"
+android:layout_toStartOf="@id/orderitem_resturantimage"
+        android:text="rakha"
+        android:id="@+id/orderitem_resturantname"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dim_25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_below="@id/orderitem_resturantname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:layout_toStartOf="@id/orderitem_resturantimage"
+        android:text="رقم الطلب"
+        android:id="@+id/orderitem_orderid"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="@dimen/dim_5dp"
+
+        android:layout_below="@id/orderitem_orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:layout_toStartOf="@id/orderitem_resturantimage"
+        android:text="الاجمالي"
+        android:id="@+id/orderitem_ordecost"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="@dimen/dim_5dp"
+
+        android:layout_below="@id/orderitem_ordecost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:layout_toStartOf="@id/orderitem_resturantimage"
+        android:text="العنوان"
+        android:id="@+id/orderitem_clientaddress"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_15sp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:id="@+id/ordersitem_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/album_dp_10"
+        android:background="@drawable/cancelbutbackground"
+        >
+        <LinearLayout
+            android:id="@+id/ordersitem_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/orderitem_btncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/cancel"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_dp_15"/>
+            <ImageView
+                android:id="@+id/orderitem_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_delete_forever_black_24dp"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

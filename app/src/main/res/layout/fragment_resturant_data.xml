@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.ResturantDataFragment">
+    <RelativeLayout
+        android:id="@+id/reldata"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_100"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_pizza"
+            android:id="@+id/resturantdata_resturantimage"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:layout_below="@id/resturantdata_resturantimage"
+            android:text="jjjjjjjjjjjjjjjjjjjjjj"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_15sp"
+            android:id="@+id/resturantdata_resturantname"
+            android:textColor="@color/dark_blue"/>
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+
+        app:tabTextAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/reldata"
+
+
+        android:id="@+id/tab_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteback"
+        app:tabBackground="@drawable/tabsbackground"
+        app:tabTextColor="@color/black"
+
+
+
+        >
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/tab_home"
+        android:id="@+id/viewpagerhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/album_dp_10" />
+
+</RelativeLayout>

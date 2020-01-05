@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.NewItemFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/newitemfragment_btnadd"
+        android:fillViewport="true"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_5dp"
+            >
+            <RelativeLayout
+                android:id="@+id/newitemfragment_scr1"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <TextView
+                    android:id="@+id/newitemfragment_tvimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/album_dp_10"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/album_dp_20"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_image_to_the_product"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <ImageView
+                    android:id="@+id/newitemfragment_ivimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/album_dp_100"
+                    android:layout_height="@dimen/album_dp_100"
+                    android:layout_below="@id/newitemfragment_tvimage"
+                    android:layout_margin="@dimen/album_dp_10"
+                    android:src="@drawable/ic_broken_image_black_24dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:background="@drawable/categoryitembackground"
+                    android:layout_below="@id/newitemfragment_ivimage"
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:hint="@string/product_name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:id="@+id/newitemfragment_edname"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_200dp"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:paddingTop="@dimen/album_dp_10"
+                    android:background="@drawable/categoryitembackground"
+                    android:layout_below="@id/newitemfragment_edname"
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:hint="@string/short_description"
+                    android:id="@+id/newitemfragment_eddesc"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:inputType="number"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:paddingTop="@dimen/album_dp_10"
+                    android:background="@drawable/categoryitembackground"
+                    android:layout_below="@id/newitemfragment_eddesc"
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:hint="@string/price"
+                    android:id="@+id/newitemfragment_edprice"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:paddingTop="@dimen/album_dp_10"
+                    android:background="@drawable/categoryitembackground"
+                    android:layout_below="@id/newitemfragment_edprice"
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:hint="@string/offer_price"
+                    android:inputType="number"
+                    android:id="@+id/newitemfragment_edofferprice"/>
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/album_dp_50"
+android:layout_below="@id/newitemfragment_scr1"
+                android:layout_margin="@dimen/dim_20dp"
+                android:background="@drawable/button_order"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_dp_20"
+                android:textColor="@color/black"
+                android:text="@string/add"
+                android:id="@+id/newitemfragment_btnadd"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

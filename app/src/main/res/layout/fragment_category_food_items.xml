@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.CategoryFoodItems">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="hhhhhhhhhhhhhh"
+        android:layout_margin="@dimen/album_dp_10"
+        android:id="@+id/fooditemsfragment_tvcatname"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/fooditemsfragment_tvcatname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/album_dp_10"
+        android:id="@+id/fooditemsfragment_rvfoodlist"
+        />
+    <ImageView
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/album_dp_100"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_add_circle_black_24dp"
+        android:layout_margin="@dimen/album_dp_20"
+        android:id="@+id/myitemsfragment_btnaddnew"
+        />
+</RelativeLayout>

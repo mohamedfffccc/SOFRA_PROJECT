@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.RestaurantProfileFragment">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/restaurantprofile_ivrestaurantimage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="@color/gray"
+        android:layout_width="@dimen/dim_150dp"
+        android:layout_height="@dimen/dim_150dp"
+        />
+    <ScrollView
+        android:layout_below="@id/restaurantprofile_ivrestaurantimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/restaurantprofile_lin111"
+                android:layout_width="match_parent"
+                android:layout_below="@id/offeritem_ivrestaurantimage"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    >
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_account_box_black_24dp"
+                        />
+
+                    <EditText
+                        android:textColor="@color/black"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_edname"
+                        android:hint="@string/name"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_email_black_24dp"
+                        />
+
+                    <EditText
+                        android:textColor="@color/black"
+
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_edemail"
+                        android:hint="@string/email"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_call_black_24dp"
+                        />
+
+                    <EditText
+                        android:textColor="@color/black"
+
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_edphone"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_home_black_24dp"
+                        />
+
+                    <Spinner
+                        android:layout_weight="2"
+                        android:background="@drawable/profileitembackground"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_spcity"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_home_black_24dp"
+                        />
+
+                    <Spinner
+                        android:layout_weight="2"
+                        android:background="@drawable/profileitembackground"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_spregion"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_vpn_key_black_24dp"
+                        />
+
+                    <EditText
+                        android:inputType="numberPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_edpassword"
+                        android:hint="@string/password"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_account_box_black_24dp"
+                        />
+
+                    <EditText
+                        android:textColor="@color/black"
+                        android:layout_weight="2"
+                        android:background="@drawable/profileitembackground"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_spcategoryname"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                         </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+                android:background="@drawable/profileitembackground"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/dim_50dp"
+
+                >
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_attach_money_black_24dp"
+                    />
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:inputType="textPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/restaurantprofile_eddelivercost"
+                    android:hint="@string/delivery_cost"
+                    android:textColorHint="@color/white"
+                    />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    >
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_attach_money_black_24dp"
+                        />
+
+                    <EditText
+                        android:textColor="@color/black"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_edminimumorder"
+                        android:hint="@string/minimum_order"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="@dimen/dim_5dp"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    >
+
+
+                    <Switch
+                        android:text="@string/state"
+                        android:textSize="@dimen/album_sp_20"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_swstate"
+                        android:textColorHint="@color/white"
+                        android:outlineSpotShadowColor="@color/red"
+                        android:track="@drawable/switchtrack"
+                        android:thumb="@drawable/ic_fiber_manual_record_black_24dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/communications"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dim_20sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_call_black_24dp"
+                        />
+
+                    <EditText
+                        android:textColor="@color/black"
+
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_edphonecommunications"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/profileitembackground"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_margin="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="@dimen/album_dp_20"
+                        android:layout_height="@dimen/album_dp_20"
+                        android:src="@drawable/ic_whatsapp"
+                        />
+
+                    <EditText
+                        android:textColor="@color/black"
+
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/restaurantprofile_edwhatsup"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/restaurantprofile_lin111"
+                android:background="@drawable/button_order"
+                android:id="@+id/restaurantprofile_btnedit"
+                android:text="@string/edit"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

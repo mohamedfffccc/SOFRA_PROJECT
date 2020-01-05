@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/loginbackground"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.RegisterResturantStep1Fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login"
+        >
+
+        <ScrollView
+            android:layout_above="@id/registerresturantfragment_btnnext"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dim_20dp"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="@dimen/dim_10dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_50dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_account_box_black_24dp"
+                            />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_edname"
+                            android:hint="@string/resturant_name"
+                            android:textColorHint="@color/white"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_email_black_24dp"
+                            />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_edemail"
+                            android:hint="@string/email"
+                            android:textColorHint="@color/white"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_access_time_black_24dp"
+                            />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_edtime"
+                            android:hint="Deliver Time"
+                            android:textColorHint="@color/white"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_home_black_24dp"
+                            />
+
+                        <Spinner
+                            android:inputType="textPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_spcity"
+                            android:hint="@string/phone"
+                            android:textColorHint="@color/white"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_home_black_24dp"
+                            />
+
+                        <Spinner
+                            android:inputType="textPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_edvillage"
+                            android:hint="@string/village"
+                            android:textColorHint="@color/white"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_vpn_key_black_24dp"
+                            />
+
+                        <EditText
+                            android:inputType="numberPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_edpassword"
+                            android:hint="@string/password"
+                            android:textColorHint="@color/white"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_vpn_key_black_24dp"
+                            />
+
+                        <EditText
+                            android:inputType="numberPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_passwordconfirmation"
+                            android:hint="@string/password_confim"
+                            android:textColorHint="@color/white"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_info_outline_black_24dp"
+                            />
+
+                        <EditText
+                            android:inputType="numberPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_minimumorder"
+                            android:hint="@string/minimum_order"
+                            android:textColorHint="@color/white"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/dim_50dp"
+
+                        android:layout_marginTop="@dimen/dim_5dp">
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_info_outline_black_24dp"
+                            />
+
+                        <EditText
+                            android:inputType="numberPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/registerfresturantragment1_delivercost"
+                            android:hint="Deliver Cost"
+                            android:textColorHint="@color/white"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/button_order"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dim_20dp"
+            android:id="@+id/registerresturantfragment_btnnext"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_15sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

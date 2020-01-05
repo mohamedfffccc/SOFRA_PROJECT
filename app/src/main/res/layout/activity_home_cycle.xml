@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:background="@color/whitebackground"
+        android:id="@+id/rel"
+        >
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_width="@dimen/album_dp_50"
+            android:layout_height="match_parent"
+            android:id="@+id/addtostore"/>
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/album_dp_50"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_notifications_none_black_24dp"
+            android:id="@+id/notifications"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin"
+        android:id="@+id/homecycle"
+        android:layout_margin="@dimen/album_dp_10"
+        android:layout_below="@id/rel"
+
+
+        ></RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/homecycle_homeitem"
+            android:src="@drawable/ic_home_black_24dp"
+            />
+        <ImageView
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/homecycle_profileitem"
+            android:src="@drawable/ic_person_outline_black_24dp"
+            />
+        <ImageView
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/homecycle_categoriesitem"
+            android:src="@drawable/ic_bookmark_black_24dp"
+            />
+        <ImageView
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/homecycle_moreitem"
+            android:src="@drawable/ic_more_horiz_black_24dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

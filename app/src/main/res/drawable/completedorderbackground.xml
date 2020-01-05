@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+<corners android:radius="@dimen/album_dp_20"/>
+    <padding android:top="@dimen/album_dp_20"
+        android:bottom="@dimen/album_dp_20"
+        android:left="@dimen/album_dp_20"
+        android:right="@dimen/album_dp_20"/>
+    <solid android:color="@color/dark_green"/>
+</shape>

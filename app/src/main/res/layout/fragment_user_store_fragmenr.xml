@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.StoreFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dim_5dp"
+
+
+        tools:listitem="@layout/userstore_orderitem"
+        android:id="@+id/userstore_storelist"
+        android:layout_height="@dimen/dim_500dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userstore_storelist"
+        android:layout_centerHorizontal="true"
+        android:text="total"
+        android:id="@+id/storefragment_tvtotal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_15sp"/>
+    <TextView
+        android:background="@drawable/buttonstore"
+        android:layout_marginTop="@dimen/album_dp_10"
+        android:layout_width="@dimen/album_dp_50"
+        android:layout_height="@dimen/album_dp_50"
+        android:gravity="center"
+        android:layout_below="@id/storefragment_tvtotal"
+        android:layout_centerHorizontal="true"
+        android:text="total"
+        android:id="@+id/storefragment_tvtotalprice"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_15sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:layout_below="@id/storefragment_tvtotalprice">
+        <Button
+            android:layout_marginStart="@dimen/dim_40dp"
+            android:background="@drawable/button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/storefragment_btnconfirm"
+            android:text="@string/confirm_order"
+            android:layout_alignParentStart="true"/>
+        <Button
+            android:layout_marginEnd="@dimen/album_dp_40"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/storefragment_btnaddmore"
+            android:text="add more"
+            android:background="@drawable/button_order"/>
+    </RelativeLayout>
+</RelativeLayout>

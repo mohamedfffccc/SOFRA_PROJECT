@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/categoryitembackground"
+    android:layout_margin="@dimen/dim_3dp"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100dp"
+        android:src="@drawable/ic_local_grocery_store_black_24dp"
+        android:id="@+id/foodlist_offerimage"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/album_dp_10"
+
+        android:layout_width="match_parent"
+        android:id="@+id/foodlist_offername"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dim_20sp"
+        android:text="تشيكن فرايز"
+        android:layout_below="@id/foodlist_offerimage"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_marginRight="@dimen/album_dp_10"
+
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:id="@+id/foodlist_offerdescription"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dim_20sp"
+        android:text=" بالجبنة تشيكن فرايز"
+        android:layout_below="@id/foodlist_offername"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/dim_5dp"/>
+    <TextView
+        android:layout_alignParentRight="true"
+
+        android:layout_width="match_parent"
+        android:id="@+id/foodlist_offerprice"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dim_20sp"
+        android:text="   السعر 20 $"
+        android:layout_below="@id/foodlist_offerdescription"
+        android:textStyle="bold"
+        android:layout_marginRight="@dimen/album_dp_10"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:layout_alignParentRight="true"
+
+        android:layout_width="match_parent"
+        android:id="@+id/foodlist_offerrealprice"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dim_20sp"
+        android:text="   السعر 20 $"
+        android:layout_below="@id/foodlist_offerprice"
+        android:textStyle="bold"
+
+        android:layout_marginRight="@dimen/album_dp_10"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+</RelativeLayout>

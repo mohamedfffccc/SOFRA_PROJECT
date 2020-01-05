@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.CommissionFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commission"
+        android:id="@+id/commission_tvcommission"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/album_dp_20"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dim_25sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="@dimen/dim_20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_below="@id/commission_tvcommission"
+        android:layout_marginTop="@dimen/album_dp_20"
+        android:id="@+id/commission_tvcommissionquantity"/>
+    <LinearLayout
+
+        android:layout_marginTop="@dimen/album_dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_200"
+        android:layout_below="@id/commission_tvcommissionquantity"
+        android:orientation="vertical"
+        android:id="@+id/commission_lincommission">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_20sp"
+            android:id="@+id/commission_tvresturantpayments"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="TextView" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_20sp"
+            android:id="@+id/commission_tvappcommissions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="TextView" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_20sp"
+            android:id="@+id/commission_tvcommissionpays"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="TextView" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_20sp"
+            android:id="@+id/commission_tvcommissionrest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dim_80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/album_dp_200"
+        android:layout_below="@id/commission_lincommission"
+        android:orientation="vertical"
+        android:id="@+id/commission_linbankaccount">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_15sp"
+            android:id="@+id/commission_tvahly"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/album_dp_50"
+            android:text="الراجحي : 123456789" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_15sp"
+            android:id="@+id/commission_tvraghy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="الاهلي : 234597852" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_15sp"
+            android:id="@+id/commission_tvpersonname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_50"
+            android:text="محمد احمد" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/dim_500dp"
+        android:layout_marginStart="-100dp"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/dim_500dp"
+        android:layout_below="@id/commission_lincommission"
+        android:src="@drawable/ic_group360"/>
+
+
+</RelativeLayout>

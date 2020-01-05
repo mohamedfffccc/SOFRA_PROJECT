@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ui.More">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:id="@+id/morefragment_ivmore"
+        android:layout_margin="@dimen/album_dp_30"
+        android:src="@drawable/ic_moreimage"/>
+    <ScrollView
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@id/morefragment_ivmore"
+        android:layout_marginTop="@dimen/album_dp_20">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/ic_offers"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+                <ImageView
+                    android:id="@+id/morefragment_ivofferimage"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/ic_offerimage"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/ic_contactus"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+                <ImageView
+                    android:id="@+id/morefragment_ivcontactimage"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/ic_contactimage"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/ic_about"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+                <ImageView
+                    android:id="@+id/morefragment_ivaboutimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/ic_aboutimage"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/ic_changepass"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+                <ImageView
+                    android:id="@+id/morefragment_ivchangepassimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/changepassimage"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/commentsimage"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+                <ImageView
+                    android:id="@+id/morefragment_ivcommenttimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/commentrateimg"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/dim_5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_50"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/logout"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+                <ImageView
+                    android:id="@+id/morefragment_ivsignoutimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_50"
+                    android:src="@drawable/logoutimage"
+                    android:layout_marginRight="@dimen/dim_10dp"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

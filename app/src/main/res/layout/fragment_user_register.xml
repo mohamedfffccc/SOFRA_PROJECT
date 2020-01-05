@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".view.fragment.ClientRegisterFragment">
+    <ScrollView
+        android:layout_marginBottom="@dimen/dim_20dp"
+        android:layout_above="@id/registerfragment_btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userregister_scroll"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_10dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_100dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/userregister_ivpersonalimage"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userregister_ivpersonalimage"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_20dp"
+                >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/dim_50dp"
+
+                android:layout_marginTop="@dimen/dim_50dp">
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_account_box_black_24dp"
+                    />
+
+                <EditText
+                    android:inputType="textPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/registerfragment_edname"
+                    android:hint="@string/name"
+                    android:textColorHint="@color/white"
+                    />
+
+
+            </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_email_black_24dp"
+                        />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/regisetrfragment_edemail"
+                        android:hint="@string/email"
+                        android:textColorHint="@color/white"
+                        />
+                    </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_call_black_24dp"
+                        />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/registerfragment_edphone"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_home_black_24dp"
+                        />
+
+                    <Spinner
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/registerfragment_spcity"
+                        android:hint="@string/phone"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_home_black_24dp"
+                        />
+
+                    <Spinner
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/registerfragment_spvillage"
+                        android:hint="@string/village"
+                        android:textColorHint="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_vpn_key_black_24dp"
+                        />
+
+                    <EditText
+                        android:inputType="numberPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/registerfragment_edpassword"
+                        android:hint="@string/password"
+                        android:textColorHint="@color/white"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/dim_50dp"
+
+                    android:layout_marginTop="@dimen/dim_5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_vpn_key_black_24dp"
+                        />
+
+                    <EditText
+                        android:inputType="numberPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/registerfragment_edpasswordconfirmation"
+                        android:hint="@string/password_confim"
+                        android:textColorHint="@color/white"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50dp"
+        android:background="@drawable/button_order"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dim_20dp"
+        android:id="@+id/registerfragment_btnregister"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_15sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>

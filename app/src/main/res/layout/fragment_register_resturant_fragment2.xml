@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".view.fragment.RegisterResturantStep2Fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/communications"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_20sp"
+            android:id="@+id/registerfresturantragment2_tvcomm"
+            android:layout_margin="@dimen/dim_20dp"
+            android:layout_alignParentStart="true"       android:textColor="@color/white"/>
+        <LinearLayout
+            android:id="@+id/registerfresturantragment2_lin1"
+            android:layout_below="@id/registerfresturantragment2_tvcomm"
+            android:layout_margin="@dimen/dim_20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dim_50dp"
+
+            android:layout_marginTop="@dimen/dim_5dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_call_black_24dp"
+                />
+
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/registerfresturantragment2_edphone"
+                android:hint="@string/phone"
+                android:textColorHint="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/registerfresturantragment2_lin1"
+            android:layout_margin="@dimen/dim_20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dim_50dp"
+            android:id="@+id/registerfresturantragment2_lin2"
+            android:layout_marginTop="@dimen/dim_5dp">
+            <ImageView
+
+                android:layout_width="@dimen/dim_50dp"
+                android:layout_height="@dimen/dim_50dp"
+                android:src="@drawable/ic_whatsapp"
+                />
+
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/registerfresturantragment2_edwhats"
+                android:hint="@string/what_s_up"
+                android:textColorHint="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/registerfresturantragment2_lin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerfresturantragment2_lin2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant_image"
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_20sp"
+                android:id="@+id/registerfresturantragment2_tvchoosepicture"
+                android:layout_margin="@dimen/dim_20dp"
+                android:layout_alignParentStart="true"       android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="@dimen/dim_100dp"
+                android:layout_height="@dimen/dim_100dp"
+                android:id="@+id/registerfresturantragment2_tvrestaurantepicture"
+                android:src="@drawable/ic_photo_size_select_actual_black_24dp"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/button_order"
+            android:layout_below="@id/registerfresturantragment2_lin3"
+            android:layout_margin="@dimen/dim_20dp"
+            android:id="@+id/registerfresturantragment2_btnregister"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_15sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

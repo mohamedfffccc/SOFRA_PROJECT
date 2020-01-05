@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/relativeback_rate">
+
+    <TextView
+        android:id="@+id/ratedialoge_tvrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/album_sp_20"
+        android:layout_marginTop="@dimen/album_dp_20"
+        android:textStyle="bold"
+        android:text="@string/select_your_rate" />
+    <GridView
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratedialoge_tvrate"
+        android:numColumns="5"
+        android:id="@+id/ratedialoge_gvrate"
+        android:layout_marginTop="@dimen/album_dp_20"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:background="@drawable/relativeback_rate"
+        android:id="@+id/ratedialoge_edcomment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_200"
+        android:layout_below="@id/ratedialoge_gvrate"
+        android:hint="@string/your_comment"
+        android:inputType="textPersonName"
+        android:gravity="top"
+        android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/ratedialoge_btncomment"
+        android:layout_below="@id/ratedialoge_edcomment"
+        android:background="@drawable/button_order"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send" />
+</RelativeLayout>

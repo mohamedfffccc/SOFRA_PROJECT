@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/profileitembackground">
+    <ImageView
+        android:layout_width="@dimen/album_dp_100"
+        android:layout_height="@dimen/album_dp_100"
+        android:src="@drawable/ic_account_box_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/resturantorderitem_ivuserimage"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:layout_toStartOf="@id/resturantorderitem_ivuserimage"
+        android:layout_marginLeft="@dimen/dim_5dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_20sp"
+        android:id="@+id/resturantorderitem_ivusername"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:textColor="@color/darkred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resturantorderitem_ivusername"
+        android:text="order id"
+        android:layout_toStartOf="@id/resturantorderitem_ivuserimage"
+        android:textSize="@dimen/dim_15sp"
+        android:id="@+id/resturantorderitem_tvorderid"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dim_5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resturantorderitem_tvorderid"
+        android:text="total"
+        android:layout_toStartOf="@id/resturantorderitem_ivuserimage"
+        android:textSize="@dimen/dim_15sp"
+        android:id="@+id/resturantorderitem_tvtotalcost"
+        android:textStyle="bold"
+        android:textColor="@color/darkred"
+
+        android:layout_marginTop="@dimen/dim_5dp"/>
+    <TextView
+        android:textColor="@color/darkred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resturantorderitem_tvtotalcost"
+        android:text="address"
+        android:layout_toStartOf="@id/resturantorderitem_ivuserimage"
+        android:textSize="@dimen/dim_15sp"
+        android:id="@+id/resturantorderitem_tvaddress"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dim_5dp"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/album_dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:orientation="horizontal"
+        android:layout_below="@id/resturantorderitem_tvaddress">
+        <LinearLayout
+            android:id="@+id/resturantorderitem_lin1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_5dp"
+            android:background="@drawable/cancelbutbackground"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="@dimen/album_dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_forever_black_24dp"
+                android:id="@+id/resturantorderitem_ivdelete"/>
+            <Button
+                android:gravity="center"
+
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+android:id="@+id/resturantorderitem_btncancel"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cancelbutbackground"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"/>
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/resturantorderitem_lin2"
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_5dp"
+                android:background="@drawable/accepteditembackground"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/album_dp_30"
+                    android:layout_height="@dimen/album_dp_30"
+                    android:layout_marginTop="@dimen/album_dp_10"
+                    android:src="@drawable/ic_like"
+                    android:id="@+id/resturantorderitem_ivdagree"/>
+                <Button
+                    android:gravity="center"
+
+                    android:layout_gravity="center"
+
+                    android:id="@+id/resturantorderitem_btn_agree"
+                    android:textColor="@color/white"
+
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/accepteditembackground"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agree"/>
+  </LinearLayout>
+        <LinearLayout
+            android:id="@+id/resturantorderitem_lin3"
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_5dp"
+            android:background="@drawable/callbuttonbackground"
+
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/album_dp_10"
+
+                android:src="@drawable/ic_call_black_24dp"
+                android:id="@+id/resturantorderitem_ivdcall"/>
+            <Button
+                android:gravity="center"
+
+                android:layout_gravity="center"
+
+                android:id="@+id/resturantorderitem_btn_call"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:background="@drawable/callbuttonbackground"
+                android:layout_height="wrap_content"
+                android:text="@string/call"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

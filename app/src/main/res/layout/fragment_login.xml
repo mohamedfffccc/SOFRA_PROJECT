@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".view.fragment.LoginFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_50dp"
+            android:text="@string/login"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_20sp"
+            android:id="@+id/loginfragment_tvlogin"/>
+        <LinearLayout
+            android:id="@+id/loginfragment_lin1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dim_50dp"
+            android:layout_below="@id/loginfragment_tvlogin"
+            android:layout_marginTop="@dimen/dim_20dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_email_black_24dp"
+                />
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/loginfragment_edemail"
+                android:hint="@string/email"
+                android:textColorHint="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginfragment_lin2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dim_50dp"
+            android:layout_below="@id/loginfragment_lin1"
+            android:layout_marginTop="@dimen/dim_50dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_vpn_key_black_24dp"
+                />
+
+            <EditText
+                android:inputType="numberPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/loginfragment_edpassword"
+                android:hint="@string/password"
+                android:textColorHint="@color/white"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dim_50dp"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:id="@+id/loginfragment_tv_forget"
+            android:layout_height="@dimen/dim_20dp"
+            android:text="@string/forget_password"
+            android:layout_below="@id/loginfragment_lin2"
+            android:textSize="@dimen/dim_15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Button
+
+            android:id="@+id/loginfragment_btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_50dp"
+            android:layout_below="@+id/loginfragment_tv_forget"
+            android:background="@drawable/button_order"
+            android:layout_margin="@dimen/dim_20dp"
+            android:text="@string/login"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_30dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/register"
+            android:background="@color/gray"
+            android:id="@+id/loginfragment_ivregister"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>

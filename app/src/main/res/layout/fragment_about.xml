@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.AboutFragment">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_aboutimage"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/aboutfragment_ivabout"
+    android:layout_margin="@dimen/album_dp_20"/>
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:background="@drawable/profileitembackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutfragment_ivabout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutfragment_ivabout"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/black"
+            android:text="الله اكبر ولله الحمد"
+            android:id="@+id/aboutfragment_tvabout"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/album_dp_20"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/album_dp_20"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutfragment_tvabout"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/black"
+            android:text="الله اكبر ولله الحمد"
+            android:id="@+id/aboutfragment_tvaboutterms"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_200"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/album_dp_20"
+        android:src="@drawable/ic_aboutiv"/>
+</RelativeLayout>
