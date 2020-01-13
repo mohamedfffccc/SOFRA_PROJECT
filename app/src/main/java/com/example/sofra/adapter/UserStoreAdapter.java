@@ -111,6 +111,7 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
                         orderlist.get(position).setQuantity(i);
                         roomDao.update(orderlist.get(position));
                         fragment.updateUi(orderlist);
+
                     }
                 });
             }
