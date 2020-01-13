@@ -18,6 +18,7 @@ import com.example.sofra.data.model.restaurants.Category;
 import com.example.sofra.data.model.offers.Offers;
 import com.example.sofra.data.model.offers.OffersData;
 import com.example.sofra.view.activity.BaseActivity;
+import com.example.sofra.view.fragment.base.BaseFragment;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,7 @@ import static com.example.sofra.helper.HelperMethod.ReplaceFragment;
 import static com.example.sofra.helper.HelperMethod.dismissProgressDialog;
 import static com.example.sofra.helper.HelperMethod.showProgressDialog;
 
-public class CategoryFoodItems extends Fragment {
+public class CategoryFoodItems extends BaseFragment {
 
     @BindView(R.id.fooditemsfragment_rvfoodlist)
     RecyclerView fooditemsfragmentRvfoodlist;
@@ -57,6 +58,7 @@ public class CategoryFoodItems extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_category_food_items, container, false);
         ButterKnife.bind(this, root);
+        setUpActivity();
         fooditemsfragmentTvcatname.setText(category.getName());
         linearLayoutManager = new LinearLayoutManager(getActivity());
         userApi = GetClient().create(UserApi.class);
@@ -103,5 +105,10 @@ public class CategoryFoodItems extends Fragment {
         newItemFragment.categorydata=category;
         ReplaceFragment(getActivity().getSupportFragmentManager(), newItemFragment, R.id.homecycle
                 , null, "medo");
+    }
+
+    @Override
+    public void onback() {
+        super.onback();
     }
 }

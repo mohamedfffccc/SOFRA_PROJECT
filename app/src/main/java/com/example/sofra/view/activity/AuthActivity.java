@@ -61,4 +61,9 @@ public class AuthActivity extends BaseActivity {
                 super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
+
+    @Override
+    public void superBackPressed() {
+        super.superBackPressed();
+    }
 }

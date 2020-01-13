@@ -162,5 +162,8 @@ public class HomeCycle extends BaseActivity {
         }
     }
 
-
+    @Override
+    public void superBackPressed() {
+        super.superBackPressed();
+    }
 }

@@ -21,6 +21,7 @@ import com.example.sofra.data.model.restaurants.Category;
 import com.example.sofra.data.model.client.Client;
 import com.example.sofra.view.activity.BaseActivity;
 import com.example.sofra.view.dialoge.NewCategoryDialoge;
+import com.example.sofra.view.fragment.base.BaseFragment;
 
 import java.util.ArrayList;
 
@@ -41,7 +42,7 @@ import static com.example.sofra.data.local.SofraConstants.REST_PASSWORD;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class RestaurantHomeFragment extends Fragment {
+public class RestaurantHomeFragment extends BaseFragment {
     ArrayList<Category> categorieslist;
     CategoriesAdapter adapter;
     LinearLayoutManager linearLayoutManager;
@@ -61,6 +62,7 @@ public class RestaurantHomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_restaurant_categories, container, false);
         ButterKnife.bind(this, root);
+        setUpActivity();
         type = Typeface.createFromAsset(getActivity().getAssets(), "fonts/font2.TTF");
         mycategoriesfragmentTvcat.setTypeface(type);
 
@@ -110,5 +112,10 @@ public class RestaurantHomeFragment extends Fragment {
         NewCategoryDialoge dialoge = new NewCategoryDialoge(RestaurantHomeFragment.this);
         dialoge.show(manager,getString(R.string.new_category));
         SaveData(getActivity(),"edit" , "add");
+    }
+
+    @Override
+    public void onback() {
+        getActivity().finish();
     }
 }

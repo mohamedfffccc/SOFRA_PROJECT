@@ -14,6 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.sofra.R;
 import com.example.sofra.adapter.ViewPagerWithFragmentAdapter;
 import com.example.sofra.data.model.restaurants.Restaurant;
+import com.example.sofra.view.fragment.base.BaseFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import butterknife.BindView;
@@ -21,7 +22,7 @@ import butterknife.ButterKnife;
 
 import static com.example.sofra.adapter.ViewPagerWithFragmentAdapter.vis;
 
-public class ResturantDataFragment extends Fragment {
+public class ResturantDataFragment extends BaseFragment {
     @BindView(R.id.tab_home)
     TabLayout tabHome;
     @BindView(R.id.viewpagerhome)
@@ -44,6 +45,7 @@ public class ResturantDataFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_resturant_data, container, false);
         ButterKnife.bind(this, root);
+        setUpActivity();
 //        rel.setVisibility(View.GONE);
         viewpagerhome.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabHome));
         adapter = new ViewPagerWithFragmentAdapter(getChildFragmentManager());
@@ -72,5 +74,8 @@ public class ResturantDataFragment extends Fragment {
 
     }
 
-
+    @Override
+    public void onback() {
+        super.onback();
+    }
 }

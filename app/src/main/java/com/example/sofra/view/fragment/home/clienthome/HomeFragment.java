@@ -64,6 +64,7 @@ public class HomeFragment extends BaseFragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         ButterKnife.bind(this, root);
+        setUpActivity();
         userApi = GetClient().create(UserApi.class);
         type = Typeface.createFromAsset(getActivity().getAssets(), "fonts/bigfont5.otf");
         resturantslistEdkeyword.setTypeface(type);
@@ -188,5 +189,10 @@ public class HomeFragment extends BaseFragment {
     @OnClick(R.id.resturantslist_btnsearch)
     public void onViewClicked() {
         filterData(resturantslistEdkeyword.getText().toString(),resturantslistSpcity.getSelectedItemPosition());
+    }
+
+    @Override
+    public void onback() {
+        getActivity().finish();
     }
 }
