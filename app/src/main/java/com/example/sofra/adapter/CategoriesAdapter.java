@@ -23,8 +23,8 @@ import com.example.sofra.data.model.restaurants.Category;
 import com.example.sofra.data.model.generalresponse.GeneralResponse;
 import com.example.sofra.view.activity.BaseActivity;
 import com.example.sofra.view.dialoge.NewCategoryDialoge;
-import com.example.sofra.view.fragment.CategoryFoodItems;
-import com.example.sofra.view.fragment.RestaurantHomeFragment;
+import com.example.sofra.view.fragment.home.restauranthome.CategoryFoodItems;
+import com.example.sofra.view.fragment.home.restauranthome.RestaurantHomeFragment;
 
 import java.util.ArrayList;
 import java.util.List;

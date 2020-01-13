@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/loginbackground"
-    tools:context=".view.fragment.ClientRegisterFragment">
+    tools:context=".view.fragment.auth.ClientRegisterFragment">
     <ScrollView
         android:layout_marginBottom="@dimen/dim_20dp"
         android:layout_above="@id/registerfragment_btnregister"

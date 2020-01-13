@@ -17,7 +17,7 @@ import com.example.sofra.R;
 import com.example.sofra.data.api.UserApi;
 import com.example.sofra.data.model.restaurants.Category;
 import com.example.sofra.view.activity.BaseActivity;
-import com.example.sofra.view.fragment.FoodList;
+import com.example.sofra.view.fragment.home.clienthome.FoodList;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.util.ArrayList;

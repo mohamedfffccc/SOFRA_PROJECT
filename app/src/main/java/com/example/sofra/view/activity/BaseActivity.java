@@ -2,7 +2,7 @@ package com.example.sofra.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.sofra.view.fragment.BaseFragment;
+import com.example.sofra.view.fragment.base.BaseFragment;
 
 public class BaseActivity extends AppCompatActivity {
 

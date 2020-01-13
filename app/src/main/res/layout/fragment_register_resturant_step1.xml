@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/loginbackground"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.RegisterResturantStep1Fragment">
+    tools:context=".view.fragment.auth.RegisterResturantStep1Fragment">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -17,7 +17,7 @@ import com.bumptech.glide.Glide;
 import com.example.sofra.R;
 import com.example.sofra.data.model.offers.OffersData;
 import com.example.sofra.view.activity.BaseActivity;
-import com.example.sofra.view.fragment.AddOrderFragment;
+import com.example.sofra.view.fragment.orders.clientorders.AddOrderFragment;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -22,7 +22,7 @@ import com.example.sofra.data.api.UserApi;
 import com.example.sofra.data.model.generalresponse.GeneralResponse;
 import com.example.sofra.data.model.offers.OffersData;
 import com.example.sofra.view.activity.BaseActivity;
-import com.example.sofra.view.fragment.AddOfferFragment;
+import com.example.sofra.view.fragment.more.offers.AddOfferFragment;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.util.ArrayList;

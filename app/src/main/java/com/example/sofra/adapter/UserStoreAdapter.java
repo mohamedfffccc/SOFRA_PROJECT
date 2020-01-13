@@ -97,6 +97,34 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
                 });
             }
         });
+        holder.storeitemIvadd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int i =orderlist.get(position).getQuantity()+1;
+                holder.storeitemTvcount.setText(i+"");
+                Executors.newSingleThreadExecutor().execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        orderlist.get(position).setQuantity(i);
+                        roomDao.update(orderlist.get(position));
+                    }
+                });
+            }
+        });
+        holder.storeitemIvremove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int i =orderlist.get(position).getQuantity()-1;
+                holder.storeitemTvcount.setText(i+"");
+                Executors.newSingleThreadExecutor().execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        orderlist.get(position).setQuantity(i);
+                        roomDao.update(orderlist.get(position));
+                    }
+                });
+            }
+        });
 
     }
 

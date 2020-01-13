@@ -22,7 +22,7 @@ import com.example.sofra.data.api.UserApi;
 import com.example.sofra.data.model.orders.OrdersData;
 import com.example.sofra.data.model.generalresponse.GeneralResponse;
 import com.example.sofra.view.activity.BaseActivity;
-import com.example.sofra.view.fragment.OrderDetailsFragment;
+import com.example.sofra.view.fragment.orders.restaurantorders.OrderDetailsFragment;
 
 import java.util.ArrayList;
 import java.util.List;

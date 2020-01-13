@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide;
 import com.example.sofra.R;
 import com.example.sofra.data.model.restaurants.Restaurant;
 import com.example.sofra.view.activity.BaseActivity;
-import com.example.sofra.view.fragment.ResturantDataFragment;
+import com.example.sofra.view.fragment.home.clienthome.ResturantDataFragment;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.util.ArrayList;

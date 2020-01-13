@@ -1,14 +1,11 @@
 package com.example.sofra.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import com.example.sofra.R;
-import com.example.sofra.view.fragment.SplashFragment;
+import com.example.sofra.view.fragment.auth.SplashFragment;
 
 import static com.example.sofra.helper.HelperMethod.ReplaceFragment;
 

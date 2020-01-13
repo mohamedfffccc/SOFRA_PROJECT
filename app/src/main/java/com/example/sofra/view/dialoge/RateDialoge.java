@@ -22,8 +22,7 @@ import com.example.sofra.data.api.UserApi;
 import com.example.sofra.data.model.restaurants.Restaurant;
 import com.example.sofra.data.model.generalresponse.GeneralResponse;
 import com.example.sofra.helper.ResturantOffers;
-import com.example.sofra.view.fragment.CommentsAndRate;
-import com.example.sofra.view.fragment.ResturantDataFragment;
+import com.example.sofra.view.fragment.home.clienthome.CommentsAndRate;
 
 import java.util.ArrayList;
 
@@ -40,7 +39,6 @@ import static com.example.sofra.data.local.Saveddata.showPositiveToast;
 import static com.example.sofra.data.local.SharedPreferencesManger.LoadData;
 import static com.example.sofra.data.local.SharedPreferencesManger.setSharedPreferences;
 import static com.example.sofra.data.local.SofraConstants.API_TOKEN;
-import static com.example.sofra.helper.HelperMethod.ReplaceFragment;
 import static com.example.sofra.helper.HelperMethod.dismissProgressDialog;
 import static com.example.sofra.helper.HelperMethod.showProgressDialog;
 

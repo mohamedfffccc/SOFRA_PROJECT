@@ -10,11 +10,11 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.sofra.R;
-import com.example.sofra.view.fragment.LoginFragment;
+import com.example.sofra.view.fragment.auth.LoginFragment;
 
 import static com.example.sofra.helper.HelperMethod.ReplaceFragment;
 
-public class AuthActivity extends AppCompatActivity {
+public class AuthActivity extends BaseActivity {
     LoginFragment loginFragment;
 
     @Override
