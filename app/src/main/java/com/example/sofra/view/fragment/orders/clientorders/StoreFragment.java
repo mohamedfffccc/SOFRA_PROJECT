@@ -21,6 +21,7 @@ import com.example.sofra.view.activity.AuthActivity;
 import com.example.sofra.view.activity.BaseActivity;
 import com.example.sofra.view.fragment.base.BaseFragment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -66,7 +67,7 @@ public class StoreFragment extends BaseFragment {
         userstoreStorelist.setLayoutManager(linearLayoutManager);
 
 
-        adapter = new UserStoreAdapter(getActivity(), (BaseActivity) getActivity(), data2);
+        adapter = new UserStoreAdapter(getActivity(), (BaseActivity) getActivity(), data2 , StoreFragment.this);
         userstoreStorelist.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         for (int i = 0; i < data2.size(); i++) {
@@ -112,6 +113,17 @@ public class StoreFragment extends BaseFragment {
                 break;
         }
     }
+    public void updateUi(List<OrderItem> data)
+    {
+        for (int i = 0; i < data.size(); i++) {
+            total = 0 + (data.get(i).getQuantity() * data.get(i).getPrice());
+
+
+        }
+        storefragmentTvtotalprice.setText("$ " + String.valueOf(total));
+
+    }
+
 
     @Override
     public void onback() {

@@ -19,6 +19,7 @@ import com.example.sofra.data.api.UserApi;
 import com.example.sofra.data.local.room.OrderItem;
 import com.example.sofra.data.local.room.RoomDao;
 import com.example.sofra.view.activity.BaseActivity;
+import com.example.sofra.view.fragment.orders.clientorders.StoreFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,11 +47,13 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
     private Typeface type;
     private UserApi userapi;
     RoomDao roomDao;
+    StoreFragment fragment;
 
-    public UserStoreAdapter(Context context, BaseActivity activity, List<OrderItem> orderlist) {
+    public UserStoreAdapter(Context context, BaseActivity activity, List<OrderItem> orderlist , StoreFragment fragment) {
         this.context = context;
         this.activity = activity;
         this.orderlist = orderlist;
+        this.fragment=fragment;
         userapi = GetClient().create(UserApi.class);
         setSharedPreferences(activity);
         roomDao = getInistance(context).roomDao();
@@ -107,6 +110,7 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
                     public void run() {
                         orderlist.get(position).setQuantity(i);
                         roomDao.update(orderlist.get(position));
+                        fragment.updateUi(orderlist);
                     }
                 });
             }
@@ -121,6 +125,13 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
                     public void run() {
                         orderlist.get(position).setQuantity(i);
                         roomDao.update(orderlist.get(position));
+                        fragment.updateUi(orderlist);
+//                        activity.runOnUiThread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                new StoreFragment().updateUi(orderlist);
+//                            }
+//                        });
                     }
                 });
             }
