@@ -171,6 +171,7 @@ public class NewItemFragment extends BaseFragment {
                 });
     }
     public void updateItem() {
+
         convertData();
         showProgressDialog(getActivity(), getString(R.string.please_wait));
         userApi.updateItem(desription, price,category_id, name, photo,item_id , apitoken, offer_price)
