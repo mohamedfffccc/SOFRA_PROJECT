@@ -16,16 +16,22 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.sofra.R;
+import com.example.sofra.data.model.generalresponse.GeneralResponse;
+import com.example.sofra.data.model.generalresponse.RegionsData;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.io.File;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.ArrayList;
 import java.util.Locale;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class HelperMethod {
     Bitmap bitmap;
@@ -145,6 +151,30 @@ public class HelperMethod {
         } catch (Exception e) {
             return null;
         }
+    }
+    public static void getSpinnerData(ArrayList<RegionsData> data, Call<GeneralResponse> method)
+    {
+        method.enqueue(new Callback<GeneralResponse>() {
+            @Override
+            public void onResponse(Call<GeneralResponse> call, Response<GeneralResponse> response) {
+                try{
+                    if (response.body().getStatus()==1) {
+                        data.clear();
+                        data.addAll(response.body().getData().getData());
+                    }
+
+                }
+                catch (Exception e)
+                {
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<GeneralResponse> call, Throwable t) {
+
+            }
+        });
     }
 
 

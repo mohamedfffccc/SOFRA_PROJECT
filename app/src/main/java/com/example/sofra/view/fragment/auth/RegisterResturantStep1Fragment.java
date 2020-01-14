@@ -32,11 +32,13 @@ import retrofit2.Response;
 import static com.example.sofra.data.api.ClientApi.GetClient;
 import static com.example.sofra.data.local.Saveddata.showPositiveToast;
 import static com.example.sofra.helper.HelperMethod.ReplaceFragment;
+import static com.example.sofra.helper.HelperMethod.getSpinnerData;
 
 
 public class RegisterResturantStep1Fragment extends BaseFragment {
     GeneralResponseAdapter adapter;
-    ArrayList<RegionsData> city , region;
+    ArrayList<RegionsData> city=new ArrayList<>();
+    ArrayList<RegionsData>  region=new ArrayList<>();
     UserApi userApi;
     String resturant_name;
     String email;
@@ -76,24 +78,21 @@ public class RegisterResturantStep1Fragment extends BaseFragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_register_resturant_step1, container, false);
         registerResturantStep2Fragment=new RegisterResturantStep2Fragment();
-
         ButterKnife.bind(this,root);
         setUpActivity();
         userApi=GetClient().create(UserApi.class);
-
-        //TODO CITY
-        addCity();
-
+        getSpinnerData(city , userApi.getCities());
         adapter=new GeneralResponseAdapter(getActivity() , city, "select city");
         registerfresturantragment1Spcity.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         registerfresturantragment1Spcity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                addRegion(position);
+                region =new ArrayList<>();
+                getSpinnerData(region , userApi.getRegions(position+1));
                 adapter=new GeneralResponseAdapter(getActivity() , region, "select region");
                 registerfresturantragment1Edvillage.setAdapter(adapter);
-                adapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();;
             }
 
             @Override
@@ -117,49 +116,7 @@ public class RegisterResturantStep1Fragment extends BaseFragment {
                 , null, "medo");
 
     }
-    public void addCity()
-    {
-        city =new ArrayList<>();
-        userApi.getCities().enqueue(new Callback<GeneralResponse>() {
-            @Override
-            public void onResponse(Call<GeneralResponse> call, Response<GeneralResponse> response) {
 
-                if (response.body().getStatus()==1) {
-                    showPositiveToast(getActivity() , response.body().getMsg());
-
-                    city.addAll(response.body().getData().getData());
-                    Toast.makeText(getActivity() , city.toString() , Toast.LENGTH_LONG).show();
-
-                }
-            }
-
-            @Override
-            public void onFailure(Call<GeneralResponse> call, Throwable t) {
-
-            }
-        });
-
-    }
-    public void addRegion(int city_id)
-    {
-        region =new ArrayList<>();
-        userApi.getRegions(city_id).enqueue(new Callback<GeneralResponse>() {
-            @Override
-            public void onResponse(Call<GeneralResponse> call, Response<GeneralResponse> response) {
-                if (response.body().getStatus()==1) {
-                    showPositiveToast(getActivity() , response.body().getMsg());
-
-                    region.addAll(response.body().getData().getData());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<GeneralResponse> call, Throwable t) {
-
-            }
-        });
-
-    }
     public void parceData()
     {
         resturant_name=registerfresturantragment1Edname.getText().toString();

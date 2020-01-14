@@ -50,6 +50,7 @@ import static com.example.sofra.data.local.Saveddata.showPositiveToast;
 import static com.example.sofra.helper.HelperMethod.convertFileToMultipart;
 import static com.example.sofra.helper.HelperMethod.convertToRequestBody;
 import static com.example.sofra.helper.HelperMethod.dismissProgressDialog;
+import static com.example.sofra.helper.HelperMethod.getSpinnerData;
 import static com.example.sofra.helper.HelperMethod.showProgressDialog;
 
 
@@ -65,7 +66,8 @@ public class ClientRegisterFragment extends BaseFragment {
 
 
     GeneralResponseAdapter adapter;
-    ArrayList<RegionsData> city, region;
+    ArrayList<RegionsData> city=new ArrayList<>();
+    ArrayList<RegionsData> region = new ArrayList<>();
     UserApi userApi;
     @BindView(R.id.userregister_ivpersonalimage)
     ImageView userregisterIvpersonalimage;
@@ -103,18 +105,17 @@ public class ClientRegisterFragment extends BaseFragment {
         ButterKnife.bind(this, root);
         setUpActivity();
         userApi = GetClient().create(UserApi.class);
-        addCity();
-
+        getSpinnerData(city , userApi.getCities());
         adapter = new GeneralResponseAdapter(getActivity(), city, "select city");
         registerfragmentSpcity.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         registerfragmentSpcity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                addRegion(position);
-                adapter = new GeneralResponseAdapter(getActivity(), region, "select region");
-                registerfragmentSpvillage.setAdapter(adapter);
-                adapter.notifyDataSetChanged();
+            getSpinnerData(region , userApi.getRegions(position));
+            adapter = new GeneralResponseAdapter(getActivity(), region, "select region");
+            registerfragmentSpvillage.setAdapter(adapter);
+            adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -142,48 +143,6 @@ public class ClientRegisterFragment extends BaseFragment {
         }
     }
 
-    public void addCity() {
-        city = new ArrayList<>();
-        userApi.getCities().enqueue(new Callback<GeneralResponse>() {
-            @Override
-            public void onResponse(Call<GeneralResponse> call, Response<GeneralResponse> response) {
-
-                if (response.body().getStatus() == 1) {
-                    showPositiveToast(getActivity(), response.body().getMsg());
-
-                    city.addAll(response.body().getData().getData());
-                    Toast.makeText(getActivity(), city.toString(), Toast.LENGTH_LONG).show();
-
-                }
-            }
-
-            @Override
-            public void onFailure(Call<GeneralResponse> call, Throwable t) {
-
-            }
-        });
-
-    }
-
-    public void addRegion(int city_id) {
-        region = new ArrayList<>();
-        userApi.getRegions(city_id).enqueue(new Callback<GeneralResponse>() {
-            @Override
-            public void onResponse(Call<GeneralResponse> call, Response<GeneralResponse> response) {
-                if (response.body().getStatus() == 1) {
-                    showPositiveToast(getActivity(), response.body().getMsg());
-
-                    region.addAll(response.body().getData().getData());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<GeneralResponse> call, Throwable t) {
-
-            }
-        });
-
-    }
 
     private void openGallery() {
         Album.initialize(AlbumConfig.newBuilder(getActivity())

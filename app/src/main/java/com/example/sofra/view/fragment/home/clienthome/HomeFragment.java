@@ -38,6 +38,7 @@ import retrofit2.Response;
 import static com.example.sofra.data.api.ClientApi.GetClient;
 import static com.example.sofra.data.local.Saveddata.showPositiveToast;
 import static com.example.sofra.helper.HelperMethod.dismissProgressDialog;
+import static com.example.sofra.helper.HelperMethod.getSpinnerData;
 import static com.example.sofra.helper.HelperMethod.showProgressDialog;
 
 public class HomeFragment extends BaseFragment {
@@ -55,7 +56,7 @@ public class HomeFragment extends BaseFragment {
     Spinner resturantslistSpcity;
     private OnEndLess onEndLess;
     private int Maxpage;
-    private ArrayList<RegionsData> city;
+    private ArrayList<RegionsData> city = new ArrayList<>();;
     private GeneralResponseAdapter generaladapter;
     private Typeface type;
 
@@ -68,11 +69,7 @@ public class HomeFragment extends BaseFragment {
         userApi = GetClient().create(UserApi.class);
         type = Typeface.createFromAsset(getActivity().getAssets(), "fonts/bigfont5.otf");
         resturantslistEdkeyword.setTypeface(type);
-
-
-
-        addCity();
-
+        getSpinnerData(city , userApi.getCities());
         generaladapter = new GeneralResponseAdapter(getActivity(), city, getString(R.string.select_city));
         resturantslistSpcity.setAdapter(generaladapter);
         generaladapter.notifyDataSetChanged();
