@@ -4,7 +4,7 @@
 <corners
     android:radius="@dimen/dim_20dp"/>
     <stroke android:color="@color/gray"
-        android:width="@dimen/album_dp_2"
+        android:width="@dimen/album_dp_1"
         />
     <solid android:color="@color/white"
         />

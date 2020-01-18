@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_marginTop="@dimen/dim_5dp"
+    android:layout_marginTop="@dimen/dim_10dp"
     android:layout_width="match_parent"
-    android:background="@drawable/categoryitembackground"
     android:layout_height="wrap_content">
     <ImageView
         android:layout_width="@dimen/album_dp_100"
@@ -35,7 +34,7 @@
         android:text="@string/price" />
     <RelativeLayout
         android:layout_alignParentEnd="true"
-android:layout_marginStart="@dimen/album_dp_10"
+
         android:layout_width="wrap_content"
         android:layout_height="@dimen/album_dp_50"
         android:id="@+id/storeitem_rel1"
@@ -47,7 +46,7 @@ android:layout_marginStart="@dimen/album_dp_10"
             android:layout_marginEnd="@dimen/dim_5dp"
             android:layout_marginTop="@dimen/album_dp_10"
             android:layout_centerHorizontal="true"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/album_dp_50"
             android:text="@string/quantity"
             android:id="@+id/orderitem_tvquantity"
@@ -58,8 +57,8 @@ android:layout_marginStart="@dimen/album_dp_10"
 
         <TextView
             android:layout_centerHorizontal="true"
-            android:background="@drawable/categoryitembackground"
-            android:layout_width="@dimen/album_dp_40"
+            android:background="@drawable/itemcountbackground"
+            android:layout_width="wrap_content"
             android:gravity="center"
             android:layout_height="@dimen/album_dp_50"
             android:text="1"
@@ -71,8 +70,9 @@ android:layout_marginStart="@dimen/album_dp_10"
         <ImageView
             android:layout_toStartOf="@id/storeitem_tvcount"
             android:id="@+id/storeitem_ivadd"
-            android:layout_marginEnd="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/album_dp_2"
             android:layout_width="@dimen/album_dp_40"
+            android:background="@drawable/addbtnback"
             android:layout_height="@dimen/album_dp_50"
             android:src="@drawable/ic_add_black_24dp"
             android:layout_gravity="center"/>
@@ -80,7 +80,8 @@ android:layout_marginStart="@dimen/album_dp_10"
 
             android:layout_toEndOf="@id/storeitem_tvcount"
             android:id="@+id/storeitem_ivremove"
-            android:layout_marginStart="@dimen/album_dp_10"
+            android:layout_marginStart="@dimen/dim_2dp"
+            android:background="@drawable/addbtnback"
             android:layout_width="@dimen/album_dp_40"
             android:layout_height="@dimen/album_dp_50"
             android:src="@drawable/ic_remove_black_24dp"

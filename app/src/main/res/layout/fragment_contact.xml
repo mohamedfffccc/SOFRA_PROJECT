@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <EditText
+                android:paddingStart="@dimen/dim_5dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
                 android:inputType="textPersonName"
@@ -34,6 +35,7 @@
             android:layout_margin="@dimen/album_dp_20"/>
             <EditText
                 android:textColorHint="@color/gray"
+                android:paddingStart="@dimen/dim_5dp"
 android:textColor="@color/black"
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
@@ -48,16 +50,19 @@ android:textColor="@color/black"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
 
-                android:inputType="phone"
+                android:inputType="numberDecimal"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/album_dp_50"
                 android:hint="@string/phone"
                 android:id="@+id/contactfragment_edphone"
                 android:background="@drawable/ed_forget"
                 android:layout_marginTop="@dimen/dim_5dp"
+                android:paddingStart="@dimen/dim_5dp"
                 android:layout_marginRight="@dimen/album_dp_20"
                 android:layout_marginLeft="@dimen/album_dp_20"/>
             <EditText
+                android:paddingStart="@dimen/dim_5dp"
+
                 android:textColorHint="@color/gray"
 android:textColor="@color/black"
                 android:inputType="text"
@@ -72,22 +77,25 @@ android:textColor="@color/black"
                 android:layout_marginRight="@dimen/album_dp_20"
                 android:layout_marginLeft="@dimen/album_dp_20"/>
             <RadioGroup
+
                 android:id="@+id/contactfragment_rgtype"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <RadioButton
-                    android:button="@drawable/rbtnback"
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:button="@drawable/radiobtncontact"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/dim_10sp"
+                    android:textSize="@dimen/dim_15sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/complainant"
                     android:id="@+id/contactfragment_rbcomplainant"/>
                 <RadioButton
-                    android:button="@drawable/rbtnback"
-                    android:textSize="@dimen/dim_10sp"
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:button="@drawable/radiobtncontact"
+                    android:textSize="@dimen/dim_15sp"
                     android:textColor="@color/black"
 
                     android:layout_width="wrap_content"
@@ -95,8 +103,9 @@ android:textColor="@color/black"
                     android:text="@string/suggession"
                     android:id="@+id/contactfragment_rbsuggession"/>
                 <RadioButton
-                    android:button="@drawable/rbtnback"
-                    android:textSize="@dimen/dim_10sp"
+                    android:layout_margin="@dimen/dim_5dp"
+                    android:button="@drawable/radiobtncontact"
+                    android:textSize="@dimen/dim_15sp"
                     android:textColor="@color/black"
 
                     android:layout_width="wrap_content"

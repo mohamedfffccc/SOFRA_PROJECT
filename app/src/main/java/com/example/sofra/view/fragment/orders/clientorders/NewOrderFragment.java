@@ -32,6 +32,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static com.example.sofra.data.api.ClientApi.GetClient;
+import static com.example.sofra.data.local.Saveddata.showNegativeToast;
 import static com.example.sofra.data.local.Saveddata.showPositiveToast;
 import static com.example.sofra.data.local.SharedPreferencesManger.LoadData;
 import static com.example.sofra.data.local.SharedPreferencesManger.setSharedPreferences;
@@ -144,7 +145,12 @@ public class NewOrderFragment extends Fragment {
                         dismissProgressDialog();
                         try {
                             if (response.body().getStatus()==1) {
-showPositiveToast(getActivity() , response.body().getMsg());                            }
+                            showPositiveToast(getActivity() , response.body().getMsg());
+                            }
+                            else
+                            {
+                                showNegativeToast(getActivity() , response.body().getMsg());
+                            }
 
                         }
                         catch (Exception e)

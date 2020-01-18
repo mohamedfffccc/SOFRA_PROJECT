@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
-<corners
-    android:topRightRadius="@dimen/dim_20dp"
-    android:bottomRightRadius="@dimen/dim_20dp"
-    android:topLeftRadius="@dimen/dim_20dp"
-    android:bottomLeftRadius="@dimen/dim_20dp"/>
-    <solid android:color="#ffffff"/>
-    <stroke android:color="@color/gray"
-        android:width="@dimen/dim_2dp"/>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetTop="-1dp">
+    <shape
+        android:shape="rectangle">
+        <gradient
 
-</shape>
+            android:startColor="@color/gray"
+            android:centerColor="@color/white"
+            android:centerY="0.05"
+
+
+            android:endColor="@color/white"
+            android:angle="90"/>
+        <size android:width="@dimen/album_dp_100"
+            android:height="@dimen/album_dp_50"/>
+
+        <stroke android:color="#e5e5e5"
+            android:width="@dimen/album_dp_1"/>
+        <corners android:radius="@dimen/album_dp_40"/>
+
+
+    </shape>
+</inset>

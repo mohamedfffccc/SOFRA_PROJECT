@@ -87,11 +87,14 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
                     @Override
                     public void run() {
                         roomDao.removeItem(orderlist.get(position));
+                        fragment.updateUi(orderlist);
                         activity.runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 orderlist.remove(position);
                                 notifyDataSetChanged();
+
+
                             }
                         });
 
@@ -127,12 +130,7 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
                         orderlist.get(position).setQuantity(i);
                         roomDao.update(orderlist.get(position));
                         fragment.updateUi(orderlist);
-//                        activity.runOnUiThread(new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                new StoreFragment().updateUi(orderlist);
-//                            }
-//                        });
+//
                     }
                 });
             }

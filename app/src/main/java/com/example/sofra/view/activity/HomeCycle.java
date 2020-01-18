@@ -27,6 +27,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static com.example.sofra.data.local.Saveddata.showNegativeToast;
+import static com.example.sofra.data.local.Saveddata.showPositiveToast;
 import static com.example.sofra.data.local.SharedPreferencesManger.LoadData;
 import static com.example.sofra.data.local.SharedPreferencesManger.setSharedPreferences;
 import static com.example.sofra.data.local.SofraConstants.USER_TYPE;
@@ -166,4 +168,5 @@ public class HomeCycle extends BaseActivity {
     public void superBackPressed() {
         super.superBackPressed();
     }
+
 }
