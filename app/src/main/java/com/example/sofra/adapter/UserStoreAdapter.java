@@ -73,11 +73,7 @@ public class UserStoreAdapter extends RecyclerView.Adapter<UserStoreAdapter.Cate
         holder.storeitemTvname.setText(orderitem.getItem_name());
         holder.storeitemTvprice.setText("$ " + String.valueOf(orderitem.getPrice()));
         holder.storeitemTvcount.setText(String.valueOf(orderitem.getQuantity()));
-        type = Typeface.createFromAsset(activity.getAssets(), "fonts/bigfont5.otf");
-        holder.storeitemTvname.setTypeface(type);
-        holder.storeitemTvcount.setTypeface(type);
-        holder.storeitemTvprice.setTypeface(type);
-        holder.orderitemTvquantity.setTypeface(type);
+       ;
         holder.storeitemBtndelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

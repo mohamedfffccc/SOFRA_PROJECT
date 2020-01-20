@@ -52,6 +52,7 @@
                 android:id="@+id/categoriesfooditem_categoryimage"
                 android:layout_alignParentRight="true"/>
             <TextView
+                android:fontFamily="@font/font5"
                 android:id="@+id/categoryfooditem_categoryname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,6 +63,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"/>
             <TextView
+                android:fontFamily="@font/font5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/categoryfooditem_categoryname"

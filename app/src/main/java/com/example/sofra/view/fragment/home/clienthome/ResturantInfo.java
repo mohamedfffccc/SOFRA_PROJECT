@@ -50,7 +50,7 @@ public class ResturantInfo extends BaseFragment {
         View root = inflater.inflate(R.layout.fragment_resturant_info, container, false);
         ButterKnife.bind(this, root);
         userApi=GetClient().create(UserApi.class);
-        type = Typeface.createFromAsset(getActivity().getAssets(), "fonts/bigfont5.otf");
+
         setInfo();
         return root;
     }
@@ -65,11 +65,8 @@ userApi.getDetails(resturantData.getId()).enqueue(new Callback<RestaurantDetails
                 resturantinfoTvcity.setText(getString(R.string.city) + response.body().getData().getRegion().getCity().getName());
                 resturantinfoTvcity.setTypeface(type);
               resturantinfoTvregion.setText(getString(R.string.region) + response.body().getData().getRegion().getName());
-              resturantinfoTvregion.setTypeface(type);
                 resturantinfoTvminimumorder.setText(getString(R.string.minimum_order) + resturantData.getMinimumCharger() + " $");
-                resturantinfoTvminimumorder.setTypeface(type);
                 resturantinfoTvdeliverycosttv.setText(getString(R.string.delivery_cost) + resturantData.getDeliveryCost() + " $");
-                resturantinfoTvdeliverycosttv.setTypeface(type);
                     resturantinfoTvstatus.setText(getString(R.string.state) + resturantData.getAvailability());
                     resturantinfoTvstatus.setTypeface(type);
 

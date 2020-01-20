@@ -58,7 +58,7 @@ public class HomeFragment extends BaseFragment {
     private int Maxpage;
     private ArrayList<RegionsData> city = new ArrayList<>();;
     private GeneralResponseAdapter generaladapter;
-    private Typeface type;
+
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -67,8 +67,7 @@ public class HomeFragment extends BaseFragment {
         ButterKnife.bind(this, root);
         setUpActivity();
         userApi = GetClient().create(UserApi.class);
-        type = Typeface.createFromAsset(getActivity().getAssets(), "fonts/bigfont5.otf");
-        resturantslistEdkeyword.setTypeface(type);
+
         getSpinnerData(city , userApi.getCities());
         generaladapter = new GeneralResponseAdapter(getActivity(), city, getString(R.string.select_city));
         resturantslistSpcity.setAdapter(generaladapter);

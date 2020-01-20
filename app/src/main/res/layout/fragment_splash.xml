@@ -45,6 +45,8 @@
                 android:src="@drawable/ic_sofralogo_12x" />
 
             <Button
+                android:fontFamily="@font/font5"
+
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dim_50dp"
                 android:id="@+id/splash_orderfood"
@@ -54,6 +56,8 @@
                 android:background="@drawable/button_order"
                 />
             <Button
+                android:fontFamily="@font/font5"
+
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dim_50dp"
                 android:id="@+id/splash_sellfood"

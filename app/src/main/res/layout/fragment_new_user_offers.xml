@@ -21,6 +21,8 @@ android:layout_margin="@dimen/album_dp_2"        android:layout_below="@id/newof
         android:id="@+id/newuseroffers_rvoffers"
         />
     <Button
+        android:fontFamily="@font/font5"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:fontFamily="@font/font5"
         android:id="@+id/textView"
         android:layout_alignParentStart="true"
 android:textColorHint="@color/black"

@@ -24,6 +24,7 @@
             android:src="@drawable/ic_verified_user_black_24dp" />
 
         <TextView
+            android:fontFamily="@font/font5"
             android:id="@+id/toasttextposi"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

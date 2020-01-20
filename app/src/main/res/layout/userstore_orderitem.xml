@@ -12,6 +12,8 @@
         android:id="@+id/storeitem_ivimage"/>
 
     <TextView
+        android:fontFamily="@font/font5"
+
         android:id="@+id/storeitem_tvname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,6 +25,8 @@
         android:text="Name" />
 
     <TextView
+        android:fontFamily="@font/font5"
+
         android:id="@+id/storeitem_tvprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,6 +46,8 @@
         android:layout_toEndOf="@id/storeitem_ivimage"
         android:layout_marginTop="@dimen/album_dp_20">
         <TextView
+            android:fontFamily="@font/font5"
+
             android:textStyle="bold"
             android:layout_marginEnd="@dimen/dim_5dp"
             android:layout_marginTop="@dimen/album_dp_10"
@@ -56,6 +62,8 @@
             />
 
         <TextView
+            android:fontFamily="@font/font5"
+
             android:layout_centerHorizontal="true"
             android:background="@drawable/itemcountbackground"
             android:layout_width="wrap_content"

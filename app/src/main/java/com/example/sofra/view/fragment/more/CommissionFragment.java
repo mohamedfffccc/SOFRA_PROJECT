@@ -68,7 +68,7 @@ public class CommissionFragment extends Fragment {
             public void onResponse(Call<RestaurantDetails> call, Response<RestaurantDetails> response) {
 try {
     if (response.body().getStatus()==1) {
-        commissionTvcommissionquantity.setText("يرجي تحويل نسبة وقدرها" + response.body().getData().getCommission()
+        commissionTvcommissionquantity.setText("يرجي تحويل نسبة وقدرها " + response.body().getData().getCommission()
         + "في مدة اقصاها شهر علما بان جميع الطلبات مسجلة علي حسابك الشخصي");
         commissionTvresturantpayments.setText(getActivity().getString(R.string.resturant_payments) + response.body().getData().getTotal() + "$");
         commissionTvappcommissions.setText(getActivity().getString(R.string.app_commission) + response.body().getData().getCommissions() + "$");

@@ -48,6 +48,7 @@ android:layout_weight="1"
             <EditText
                 android:textSize="@dimen/dim_20sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/font5"
 
 android:background="@drawable/categoryitembackground"
                 android:hint="@string/search_your_restaurant_here"

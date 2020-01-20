@@ -85,8 +85,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
         viewBinderHelper.bind(holder.swipe1, String.valueOf(categorydata.getId()));
 
         holder.categoryitemCategoryname.setText(categorydata.getName());
-        type = Typeface.createFromAsset(context.getAssets(), "fonts/bigfont3.otf");
-        holder.categoryitemCategoryname.setTypeface(type);
+
         Glide.with(context).load(categorydata.getPhotoUrl()).into(holder.categoriesitemCategoryimage);
         holder.categoriesitemCategoryimage.setOnClickListener(new View.OnClickListener() {
             @Override

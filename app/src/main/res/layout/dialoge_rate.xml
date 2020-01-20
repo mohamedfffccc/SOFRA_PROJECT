@@ -5,6 +5,7 @@
     android:background="@drawable/relativeback_rate">
 
     <TextView
+        android:fontFamily="@font/font5"
         android:id="@+id/ratedialoge_tvrate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,10 +34,12 @@
         android:hint="@string/your_comment"
         android:inputType="textPersonName"
         android:gravity="top"
+        android:fontFamily="@font/font5"
         android:textColorHint="@color/gray" />
 
     <Button
         android:id="@+id/ratedialoge_btncomment"
+        android:fontFamily="@font/font5"
         android:layout_below="@id/ratedialoge_edcomment"
         android:background="@drawable/button_order"
         android:layout_centerHorizontal="true"

@@ -11,6 +11,8 @@
         android:id="@+id/notificationitem_ivimage"
         android:layout_alignParentStart="true"/>
     <TextView
+        android:fontFamily="@font/font5"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/notificationitem_tvtext"
@@ -21,6 +23,8 @@
         android:textSize="@dimen/dim_15sp"
         android:textColor="@color/black"/>
     <TextView
+        android:fontFamily="@font/font5"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="منذ 25 د"

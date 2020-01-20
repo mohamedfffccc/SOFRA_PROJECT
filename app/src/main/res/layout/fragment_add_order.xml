@@ -36,6 +36,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/font5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/dim_25sp"
@@ -43,6 +44,7 @@
                     android:id="@+id/addorder_tvordername"
                     android:textColor="@color/colorPrimaryDark"/>
                 <TextView
+                    android:fontFamily="@font/font5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/dim_25sp"
@@ -59,6 +61,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_attach_money_black_24dp"/>
                     <TextView
+                        android:fontFamily="@font/font5"
                         android:layout_marginStart="@dimen/dim_5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -70,6 +73,7 @@
                 </LinearLayout>
             </LinearLayout>
             <TextView
+                android:fontFamily="@font/font5"
                 android:layout_alignParentStart="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,6 +85,7 @@
                 android:id="@+id/addorder_tvspecial"
                 android:textColor="@color/colorPrimaryDark"/>
             <EditText
+                android:fontFamily="@font/font5"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/album_dp_200"
                 android:layout_below="@id/addorder_tvspecial"
@@ -104,6 +109,7 @@
                 android:layout_below="@id/addorder_etspecialorder"
                 android:layout_marginTop="@dimen/album_dp_20">
                 <TextView
+                    android:fontFamily="@font/font5"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/album_dp_50"
                     android:text="@string/quantity"
@@ -115,6 +121,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
+                    android:fontFamily="@font/font5"
                    android:layout_centerInParent="true"
                     android:background="@drawable/itemcountbackground"
                     android:layout_width="wrap_content"

@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".view.fragment.more.CommissionFragment">
     <TextView
+        android:fontFamily="@font/font5"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/commission"
@@ -15,6 +17,8 @@
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/dim_25sp"/>
     <TextView
+        android:fontFamily="@font/font5"
+
         android:layout_width="match_parent"
         android:textSize="@dimen/dim_20sp"
         android:textColor="@color/colorPrimary"
@@ -33,6 +37,7 @@
         android:id="@+id/commission_lincommission">
 
         <TextView
+            android:fontFamily="@font/font5"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="@dimen/dim_20sp"
@@ -42,6 +47,8 @@
             android:text="TextView" />
 
         <TextView
+            android:fontFamily="@font/font5"
+
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="@dimen/dim_20sp"
@@ -51,6 +58,8 @@
             android:text="TextView" />
 
         <TextView
+            android:fontFamily="@font/font5"
+
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="@dimen/dim_20sp"
@@ -60,6 +69,8 @@
             android:text="TextView" />
 
         <TextView
+            android:fontFamily="@font/font5"
+
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="@dimen/dim_20sp"
@@ -78,6 +89,8 @@
         android:id="@+id/commission_linbankaccount">
 
         <TextView
+            android:fontFamily="@font/font5"
+
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="@dimen/dim_15sp"
@@ -88,6 +101,8 @@
             android:text="الراجحي : 123456789" />
 
         <TextView
+            android:fontFamily="@font/font5"
+
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="@dimen/dim_15sp"
@@ -97,6 +112,8 @@
             android:text="الاهلي : 234597852" />
 
         <TextView
+            android:fontFamily="@font/font5"
+
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="@dimen/dim_15sp"

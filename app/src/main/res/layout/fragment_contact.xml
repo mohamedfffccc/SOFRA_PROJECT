@@ -23,6 +23,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <EditText
+                android:fontFamily="@font/font5"
+
                 android:paddingStart="@dimen/dim_5dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
@@ -34,6 +36,8 @@
             android:background="@drawable/ed_forget"
             android:layout_margin="@dimen/album_dp_20"/>
             <EditText
+                android:fontFamily="@font/font5"
+
                 android:textColorHint="@color/gray"
                 android:paddingStart="@dimen/dim_5dp"
 android:textColor="@color/black"
@@ -47,6 +51,8 @@ android:textColor="@color/black"
                 android:layout_marginRight="@dimen/album_dp_20"
                 android:layout_marginLeft="@dimen/album_dp_20"/>
             <EditText
+                android:fontFamily="@font/font5"
+
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
 
@@ -61,6 +67,8 @@ android:textColor="@color/black"
                 android:layout_marginRight="@dimen/album_dp_20"
                 android:layout_marginLeft="@dimen/album_dp_20"/>
             <EditText
+                android:fontFamily="@font/font5"
+
                 android:paddingStart="@dimen/dim_5dp"
 
                 android:textColorHint="@color/gray"
@@ -84,6 +92,8 @@ android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <RadioButton
+                    android:fontFamily="@font/font5"
+
                     android:layout_margin="@dimen/dim_5dp"
                     android:button="@drawable/radiobtncontact"
                     android:textColor="@color/black"
@@ -93,6 +103,8 @@ android:textColor="@color/black"
                     android:text="@string/complainant"
                     android:id="@+id/contactfragment_rbcomplainant"/>
                 <RadioButton
+                    android:fontFamily="@font/font5"
+
                     android:layout_margin="@dimen/dim_5dp"
                     android:button="@drawable/radiobtncontact"
                     android:textSize="@dimen/dim_15sp"
@@ -103,6 +115,8 @@ android:textColor="@color/black"
                     android:text="@string/suggession"
                     android:id="@+id/contactfragment_rbsuggession"/>
                 <RadioButton
+                    android:fontFamily="@font/font5"
+
                     android:layout_margin="@dimen/dim_5dp"
                     android:button="@drawable/radiobtncontact"
                     android:textSize="@dimen/dim_15sp"
@@ -117,6 +131,8 @@ android:textColor="@color/black"
         </LinearLayout>
     </ScrollView>
     <Button
+        android:fontFamily="@font/font5"
+
         android:layout_margin="@dimen/album_dp_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -5,6 +5,7 @@ android:layout_marginTop="@dimen/album_dp_2"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dim_80dp">
     <TextView
+        android:fontFamily="@font/font5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -15,6 +16,7 @@ android:layout_marginTop="@dimen/album_dp_2"
         android:layout_marginRight="@dimen/album_dp_20"
         android:id="@+id/comment_item_clientname"/>
     <TextView
+        android:fontFamily="@font/font5"
         android:layout_marginTop="@dimen/album_dp_10"
         android:layout_marginRight="@dimen/album_dp_20"
         android:layout_width="wrap_content"

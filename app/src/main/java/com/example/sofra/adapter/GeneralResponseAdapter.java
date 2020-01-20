@@ -46,10 +46,10 @@ public class GeneralResponseAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.item, null);
-        type = Typeface.createFromAsset(context.getAssets(), "fonts/bigfont5.otf");
+
 
         TextView names = (TextView) view.findViewById(R.id.textView);
-        names.setTypeface(type);
+
 
         names.setText(generalResponseDataList.get(i).getName());
 //        selectedId = generalResponseDataList.get(i).getId();

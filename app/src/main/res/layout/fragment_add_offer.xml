@@ -16,6 +16,7 @@
             android:layout_height="match_parent"
             >
             <TextView
+                android:fontFamily="@font/font5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -33,6 +34,8 @@
                 android:layout_centerHorizontal="true"
                 android:id="@+id/addofferfragment_ivimage"/>
             <EditText
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font5"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/album_dp_50"
@@ -42,6 +45,8 @@
                 android:layout_margin="@dimen/album_dp_10"
                 android:id="@+id/addofferfragment_tvname"/>
             <EditText
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font5"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dim_200dp"
@@ -51,6 +56,8 @@
                 android:layout_margin="@dimen/album_dp_10"
                 android:id="@+id/addofferfragment_tvdesc"/>
             <EditText
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font5"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/album_dp_50"
@@ -70,6 +77,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:fontFamily="@font/font5"
                     android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -101,6 +109,7 @@
                     android:layout_marginEnd="@dimen/dim_5dp"/>
 
                 <TextView
+                    android:fontFamily="@font/font5"
                     android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -111,6 +120,7 @@
 
             </LinearLayout>
             <Button
+                android:fontFamily="@font/font5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_order"

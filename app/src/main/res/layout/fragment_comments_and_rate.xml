@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".view.fragment.home.clienthome.CommentsAndRate">
     <TextView
+        android:fontFamily="@font/font5"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/dark_blue"
@@ -14,6 +16,8 @@
         android:layout_marginTop="@dimen/dim_50dp"
         android:id="@+id/commentsfragment_tvrate"/>
     <Button
+        android:fontFamily="@font/font5"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_order"

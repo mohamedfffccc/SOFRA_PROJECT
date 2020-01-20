@@ -18,6 +18,9 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.sofra.R;
 import com.example.sofra.data.model.generalresponse.GeneralResponse;
 import com.example.sofra.data.model.generalresponse.RegionsData;
+import com.example.sofra.view.activity.BaseActivity;
+import com.example.sofra.view.dialoge.LoadingDialoge;
+import com.example.sofra.view.dialoge.LogoutDialoge;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.io.File;
@@ -175,6 +178,12 @@ public class HelperMethod {
 
             }
         });
+    }
+    public static void showLoadDialoge(BaseActivity context1)
+    {
+        FragmentManager manager = context1.getSupportFragmentManager();
+        LoadingDialoge loadingDialoge = new LoadingDialoge();
+        loadingDialoge.show(manager , "wait");
     }
 
 

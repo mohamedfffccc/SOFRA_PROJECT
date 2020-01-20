@@ -53,6 +53,7 @@ android:layout_marginTop="@dimen/album_dp_10"
                 android:id="@+id/categoriesitem_categoryimage"
                 android:layout_alignParentStart="true"/>
             <TextView
+                android:fontFamily="@font/font5"
                 android:id="@+id/categoryitem_categoryname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -12,6 +12,7 @@
         android:src="@drawable/ic_local_grocery_store_black_24dp"
         android:id="@+id/foodlist_offerimage"/>
     <TextView
+        android:fontFamily="@font/font5"
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/album_dp_10"
 
@@ -27,7 +28,7 @@
         />
     <TextView
         android:layout_marginRight="@dimen/album_dp_10"
-
+        android:fontFamily="@font/font5"
         android:layout_width="match_parent"
         android:layout_alignParentRight="true"
         android:id="@+id/foodlist_offerdescription"
@@ -41,7 +42,7 @@
         android:layout_marginTop="@dimen/dim_5dp"/>
     <TextView
         android:layout_alignParentRight="true"
-
+        android:fontFamily="@font/font5"
         android:layout_width="match_parent"
         android:id="@+id/foodlist_offerprice"
         android:layout_height="wrap_content"
@@ -53,6 +54,7 @@
         android:textColor="@color/colorPrimaryDark"
         />
     <TextView
+        android:fontFamily="@font/font5"
         android:layout_alignParentRight="true"
 
         android:layout_width="match_parent"

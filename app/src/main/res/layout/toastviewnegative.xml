@@ -19,6 +19,7 @@
             android:id="@+id/toast_image"/>
 
         <TextView
+            android:fontFamily="@font/font5"
             android:text="hhhhhhhhhhhhhhhhh"
             android:id="@+id/toasttextnega"
             android:layout_width="wrap_content"

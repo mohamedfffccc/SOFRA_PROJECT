@@ -5,6 +5,8 @@
     android:background="@color/white"
     android:layout_height="wrap_content">
     <TextView
+        android:fontFamily="@font/font5"
+
         android:id="@+id/newcategorydialog_tvcategorytext"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
@@ -29,6 +31,8 @@
         android:layout_height="@dimen/album_dp_100"
         app:srcCompat="@drawable/ic_broken_image_black_24dp" />
     <EditText
+        android:fontFamily="@font/font5"
+
         android:id="@+id/newcategorydialog_edcategoryname"
         android:layout_below="@id/newcategorydialog_ivcategoryimage"
         android:layout_centerHorizontal="true"
@@ -47,6 +51,8 @@
 
 
     <Button
+        android:fontFamily="@font/font5"
+
         android:id="@+id/newcategorydialog_btnadd"
         android:layout_below="@id/newcategorydialog_edcategoryname"
         android:layout_centerHorizontal="true"

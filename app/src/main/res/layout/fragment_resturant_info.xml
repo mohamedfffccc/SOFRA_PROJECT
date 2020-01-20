@@ -18,6 +18,8 @@
 
 
             <TextView
+                android:fontFamily="@font/font5"
+
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="@dimen/dim_20sp"
@@ -27,6 +29,8 @@
                 android:text="TextView" />
 
             <TextView
+                android:fontFamily="@font/font5"
+
                 android:textColor="@color/black"
 
                 android:id="@+id/resturantinfo_tvcity"
@@ -38,6 +42,8 @@
                 android:layout_marginTop="@dimen/album_dp_20"/>
 
             <TextView
+                android:fontFamily="@font/font5"
+
                 android:textColor="@color/black"
 
                 android:textStyle="bold"
@@ -49,6 +55,8 @@
                 android:text="TextView" />
 
             <TextView
+                android:fontFamily="@font/font5"
+
                 android:textColor="@color/black"
 
                 android:textStyle="bold"
@@ -60,6 +68,8 @@
                 android:text="TextView" />
 
             <TextView
+                android:fontFamily="@font/font5"
+
                 android:textColor="@color/black"
 
                 android:textStyle="bold"
